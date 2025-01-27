@@ -1,5 +1,6 @@
 from random import randint
 from art import logo
+from data import dados_higher_lower
 print(logo)
 intro = "Bem vindo ao jogo Maior ou Menor: Digite 1 se você acha que o primeiro número é maior e 2 se o segundo número é maior: "
 
