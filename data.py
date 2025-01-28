@@ -1,4 +1,4 @@
-dados_higher_lower = [
+data_higher_lower = [
     {
         "name": "Verbos de Ligação",
         "value": 10,
@@ -32,7 +32,7 @@ dados_higher_lower = [
     {
         "name": "Tipos Textuais",
         "valor": 6,
-        "answer": "Narrativo(contos, crônicas, relatos, notícia), Descritivo(notícia, bula de remédio), Injuntivo/Instrucional(receitas, manuais, regulamentos), Dialogal/(), Expositivo(textos informativos, manuais, textos científicos), Argumentativo(artigos de opinião, editoriais) ",
+        "answer": "Narrativo(contos, crônicas, relatos, notícia), Descritivo(notícia, bula de remédio), Injuntivo/Instrucional(receitas, manuais, regulamentos), Dialogal/(), Expositivo(textos informativos, manuais, textos científicos), Argumentativo(artigos de opinião, editoriais)",
     },
     {
         "name": "Termos Essenciais da Oração",
