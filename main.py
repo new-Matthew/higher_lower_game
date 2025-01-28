@@ -3,6 +3,7 @@ from art import logo, versus as vs
 from data import data_higher_lower
 
 print(logo)
+score = 0
 intro = "Bem vindo ao jogo Maior ou Menor: Digite 1 se você acha que o primeiro número é maior e 2 se o segundo número é maior: "
 print(intro)
 topic_1 = random.choice(data_higher_lower)
@@ -35,3 +36,8 @@ topic_value_2 = topic_2["value"]
 is_correct = check_answer(guess, topic_value_1, topic_value_2)
 
 
+if is_correct:
+    score =+ 1
+    print(f"Você acertou e seu score é: {score}")
+else:
+    print(f"Você errou e seu score final é: {score}")
