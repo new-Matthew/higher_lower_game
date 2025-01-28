@@ -20,14 +20,11 @@ def check_answer(guess_user, topic_value_1, topic_value_2):
 def show_berore(topic):
 
     topic_name = topic["name"]
-    #topic = data_higher_lower["value"]
-    #topic = data_higher_lower["answer"]
     return f"{topic_name} "
 
 def show_result(topic):
     
     topic_name = topic["name"]
-    #topic_value = topic["value"]
     topic_answer = topic["answer"]
     return f"{topic_name} possui: {topic_answer}"
 
@@ -63,4 +60,3 @@ def greather_lower(f_number, s_number, score):
 """
 
 
-#greather_lower(topic_1, topic_2, score)
