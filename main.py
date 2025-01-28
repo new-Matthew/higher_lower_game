@@ -11,23 +11,10 @@ if topic_1 == topic_2:
     topic_2 = random.choice(data_higher_lower)
 
 def check_answer(guess_user, topic_value_1, topic_value_2):
-    score = 0
-
-    if topic_value_1 > topic_value_2 and guess_user == 1:
-        score =+ 1
-        print(f"Você acertou e seu score é: {score}")
-
-    elif topic_value_1 < topic_value_2 and guess_user == 1:
-        print(f"Você perdeu e seu score é: {score}")
-
-    elif topic_value_1 > topic_value_2 and guess_user == 2:
-        print(f"Você perdeu e seu score é: {score}")
-
-    elif topic_value_1 < topic_value_2 and guess_user == 2:
-        score =+ 1
-        print(f"Você acertou e seu score é: {score}")
+    if topic_value_1 > topic_value_2:
+        return guess_user == 1
     else:
-        print("Insira um valor válido!")
+        return guess_user == 2
 
 def show_before(topic):
 
@@ -45,7 +32,6 @@ guess = int(input("Digite 1 ou 2: "))
 topic_value_1 = topic_1["value"]
 topic_value_2 = topic_2["value"]
 
-check_answer(guess, topic_value_1, topic_value_2)
-
+is_correct = check_answer(guess, topic_value_1, topic_value_2)
 
 
