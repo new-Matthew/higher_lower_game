@@ -19,10 +19,10 @@ def show_before(topic):
     return f"{topic_name} "
 
 game_should_continue = True
-
+topic_2 = random.choice(data_higher_lower)
 while game_should_continue:
 
-    topic_1 = random.choice(data_higher_lower)
+    topic_1 = topic_2
     topic_2 = random.choice(data_higher_lower)
     if topic_1 == topic_2:
         topic_2 = random.choice(data_higher_lower)
